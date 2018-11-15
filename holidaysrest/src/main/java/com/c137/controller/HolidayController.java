@@ -23,10 +23,10 @@ public class HolidayController {
 	private HolidayService holiService;
 
 	@Transactional
-	@RequestMapping(method = RequestMethod.POST, value = "/api/verificaFita")
-	public ResponseEntity<ResponseDTO> verificaFita(@RequestBody RequestDTO fita) {
+	@RequestMapping(method = RequestMethod.POST, value = "/api/postDate")
+	public ResponseEntity<ResponseDTO> verificaFita(@RequestBody RequestDTO post) {
 		try {
-			ResponseDTO form = holiService.validaRequest(fita);
+			ResponseDTO form = holiService.validaRequest(post);
 			return new ResponseEntity<>(form, HttpStatus.OK);
 		} catch (Exception e) {
 			e.printStackTrace();
