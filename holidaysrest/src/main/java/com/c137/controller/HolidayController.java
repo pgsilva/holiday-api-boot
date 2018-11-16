@@ -30,7 +30,7 @@ public class HolidayController {
 			return new ResponseEntity<>(form, HttpStatus.OK);
 		} catch (Exception e) {
 			e.printStackTrace();
-			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+ 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 }

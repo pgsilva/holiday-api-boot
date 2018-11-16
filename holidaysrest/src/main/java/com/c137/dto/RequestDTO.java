@@ -1,7 +1,6 @@
 package com.c137.dto;
 
 import java.io.Serializable;
-import java.sql.Date;
 
 public class RequestDTO implements Serializable {
 
@@ -11,8 +10,6 @@ public class RequestDTO implements Serializable {
 	private static final long serialVersionUID = -2796987353333740144L;
 	private String sDateInit;
 	private String sDateFinish;
-	private Date dateInit;
-	private Date dateFinish;
 	private Integer diasSeguidos;
 	
 	public String getsDateInit() {
@@ -26,18 +23,6 @@ public class RequestDTO implements Serializable {
 	}
 	public void setsDateFinish(String sDateFinish) {
 		this.sDateFinish = sDateFinish;
-	}
-	public Date getDateInit() {
-		return dateInit;
-	}
-	public void setDateInit(Date dateInit) {
-		this.dateInit = dateInit;
-	}
-	public Date getDateFinish() {
-		return dateFinish;
-	}
-	public void setDateFinish(Date dateFinish) {
-		this.dateFinish = dateFinish;
 	}
 	public Integer getDiasSeguidos() {
 		return diasSeguidos;

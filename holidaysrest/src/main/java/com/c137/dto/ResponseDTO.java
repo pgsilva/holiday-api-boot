@@ -14,8 +14,7 @@ public class ResponseDTO implements Serializable {
 	private Integer ttSabados;
 	private Integer ttDomingos;
 	private Integer ttFeriados;
-	private String errorMsg;
-	private Boolean hasError;
+	private String dataFinal;
 
 	public Integer getTtUteis() {
 		return ttUteis;
@@ -57,20 +56,12 @@ public class ResponseDTO implements Serializable {
 		this.ttFeriados = ttFeriados;
 	}
 
-	public String getErrorMsg() {
-		return errorMsg;
+	public String getDataFinal() {
+		return dataFinal;
 	}
 
-	public void setErrorMsg(String errorMsg) {
-		this.errorMsg = errorMsg;
-	}
-
-	public Boolean getHasError() {
-		return hasError;
-	}
-
-	public void setHasError(Boolean hasError) {
-		this.hasError = hasError;
+	public void setDataFinal(String dataFinal) {
+		this.dataFinal = dataFinal;
 	}
 
 }
